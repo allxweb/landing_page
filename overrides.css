@@ -1,0 +1,100 @@
+/* Увеличенная desktop-версия без влияния на мобильную раскладку */
+@media (min-width: 851px) {
+  :root { --pad: 8vw; }
+  .header { height: 122px; }
+  .logo { min-width: 250px; font-size: 22px; }
+  .logo b { font-size: 10px; }
+  .logo-mark { font-size: 31px; }
+  .nav { gap: 34px; }
+  .nav a { font-size: 13px; }
+  .header-actions { gap: 20px; }
+  .header-actions > a:first-child { font-size: 12px; }
+  .button { min-width: 175px; padding: 17px 22px; font-size: 12px; }
+
+  .hero { height: 860px; }
+  .hero-photo { width: 490px; height: 805px; bottom: -88px; }
+  .hero-content { padding-top: 245px; }
+  h1 { font-size: 67px; }
+  h2 { font-size: 51px; }
+  .hero-lead { max-width: 500px; font-size: 14px; }
+  .ornament, .kicker { font-size: 12px; }
+  .hero-side { font-size: 10px; }
+
+  .intro { grid-template-columns: 440px 1fr; padding-top: 140px; padding-bottom: 140px; }
+  .intro-images { height: 520px; }
+  .intro-images > img { width: 300px; height: 415px; }
+  .intro-square { width: 205px; height: 170px; padding: 30px; font-size: 56px; }
+  .intro-copy > p:not(.kicker), .section-heading > p, .contact > div > p:not(.kicker) { font-size: 13px; }
+  .signature span { font-size: 24px; }
+
+  .facts { padding-top: 55px; padding-bottom: 55px; }
+  .facts strong, .rating strong { font-size: 42px; }
+  .facts span, .rating span { font-size: 10px; }
+  .practice, .reviews { padding-top: 145px; padding-bottom: 155px; }
+  .section-heading, .reviews-heading { margin-bottom: 70px; }
+  .cards { gap: 18px; }
+  .cards article { min-height: 340px; padding: 36px 30px 27px; }
+  .cards article > span { font-size: 29px; }
+  .cards h3 { font-size: 34px; }
+  .cards p, .cards a { font-size: 12px; }
+
+  .review-list { gap: 22px; }
+  .review-list article { padding: 34px; }
+  .review-list blockquote { font-size: 22px; }
+  .avatar { width: 43px; height: 43px; font-size: 17px; }
+  .review-top b { font-size: 13px; }
+  .review-top small, .stars { font-size: 10px; }
+
+  .contact { padding-top: 145px; padding-bottom: 145px; }
+  .contact-box { padding: 44px 48px; }
+  .contact-box p { color: #000; font-size: 31px; }
+  .contact-box a { font-size: 14px; padding: 19px 0; }
+  .contact-box a:nth-of-type(1) { font-size: 33px; }
+  .contact-box small { color: #000; font-size: 10px; }
+  footer { padding-top: 40px; padding-bottom: 40px; }
+}
+
+.contact-box p { color: #000 !important; }
+
+@media (max-width: 850px) {
+  .hero {
+    height: 790px;
+    background: linear-gradient(180deg, #101722 0 48%, #17212b 48% 100%);
+  }
+
+  .hero-content {
+    padding-top: 118px;
+  }
+
+  .hero-lead {
+    max-width: 310px;
+    margin: 17px 0 20px;
+  }
+
+  .hero-photo {
+    right: 7vw;
+    bottom: -52px;
+    width: 76vw;
+    height: 410px;
+    opacity: 1;
+    border-radius: 16px 16px 0 0;
+    object-position: center top;
+    filter: saturate(.75) brightness(.88);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(10,17,25,.16) 0 44%, rgba(10,17,25,.04) 100%);
+  }
+
+  .hero::after {
+    content: 'АДВОКАТ · № 7532';
+    position: absolute;
+    z-index: 2;
+    right: 11vw;
+    bottom: 21px;
+    color: var(--light);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .12em;
+  }
+}

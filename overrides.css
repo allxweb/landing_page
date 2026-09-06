@@ -87,7 +87,7 @@
   }
 
   .hero::after {
-    content: 'АДВОКАТ · № 7532';
+    content: 'АДВОКАТ';
     position: absolute;
     z-index: 2;
     right: 11vw;

@@ -64,6 +64,15 @@
 
   .hero-content {
     padding-top: 118px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    font-size: clamp(30px, 9.2vw, 41px);
+    max-width: 100%;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   .hero-lead {
@@ -72,9 +81,10 @@
   }
 
   .hero-photo {
-    right: 7vw;
+    left: var(--pad);
+    right: auto;
     bottom: -52px;
-    width: 76vw;
+    width: calc(100% - 2 * var(--pad));
     height: 410px;
     opacity: 1;
     border-radius: 16px 16px 0 0;
@@ -90,7 +100,8 @@
     content: 'АДВОКАТ';
     position: absolute;
     z-index: 2;
-    right: 11vw;
+    left: var(--pad);
+    right: auto;
     bottom: 21px;
     color: var(--light);
     font-size: 8px;
